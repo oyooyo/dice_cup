@@ -17,7 +17,7 @@
 	"scripts": {
 		"createicons": "convert -background none -density 30 -resize 192x192 \"src/app/logo.svg\" \"public/logo-192x192.png\" && convert -background none -density 30 -resize 512x512 \"src/app/logo.svg\" \"public/logo-512x512.png\" && convert -background none -density 30 \"src/app/logo.svg\" -define icon:auto-resize=\"64,32,24,16\" \"public/favicon.ico\"",
 		"start": "react-scripts start",
-		"build": "react-scripts build",
+		"build": "BUILD_PATH=docs react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
